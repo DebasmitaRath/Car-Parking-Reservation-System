@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" CodeFile="home.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/validation.js"></script>
+        <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+        <link href="assets/css/examples.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server"  autocomplete="off">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color:white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style="color:white;">Car Parking Management System </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <div class="container-fluid">
+          <div class="row">
+              
+            <div class="col-sm-6"></div>
+            <div class="col-sm-3 text-center">
+                
+            </div>
+              
+          </div>
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+          <div class="row">
+           <div class="col-sm-2">
+            <ul class="list-group">
+                <li class="list-group-item"> <a class="nav-link" href="index.aspx">Home</a> </li>
+                <li class="list-group-item"> <a class="nav-link" href="login_admin.aspx">Admin</a> </li>
+                <li class="list-group-item"> <a class="nav-link" href="login_user.aspx">Customer</a> </li>
+                
+            </ul>
+        </div>
+            <div class="col-sm-6">
+                <img  class="img-fluid " src="img/32.jpg" />
+          </div>
+              <div class="col-sm-4">
+                
+                   
+                    
+                    <div class="form-group pt-3">
+                        <label class="control-label">User Name </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user-tie"></i></span>
+                            <asp:TextBox class="form-control" ID="TextBox1" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="form-group pt-3">
+                        <label class="control-label">Password </label>
+                        <div class="input-group">
+                        <span class="input-group-text" id="Span1"><i class="fa-solid fa-key"></i></span>
+                            <asp:TextBox ID="TextBox2"  class="form-control"  runat="server" TextMode="password"></asp:TextBox>
+                    </div>
+                    </div>
+             <div class="form-group pt-3">
+                 <asp:Button ID="Button1" CssClass="btn btn-success shadow-none"  runat="server" Text="Login" />
+                 </div>
+           
+                 
+              </div>
+             
+          </div>
+              </asp:ContentPlaceHolder>
+      </div>
+      <div class="footer">
+        <div class="copyright text-center">
+        <p>Copyright © 2022</p>
+        </div>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>

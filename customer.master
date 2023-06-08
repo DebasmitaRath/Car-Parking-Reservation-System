@@ -1,0 +1,77 @@
+﻿<%@ Master Language="VB" CodeFile="customer.master.vb" Inherits="user" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+        <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+        <link href="assets/css/examples.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script src="assets/js/bootstrap.js"></script>
+    <style>
+        ul.dropdown-menu {
+            background-color:black!important;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color:white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style="color:#F92773;">Car Parking Management System </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="user_slot_display.aspx">Home</a>
+          </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Parking Slot
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="user_booking_list.aspx">Booking List</a></li>
+            <li><a class="dropdown-item" href="user_parking_history.aspx" >Booking History</a></li>
+            
+          </ul>
+        </li>
+          
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="change_password.aspx" >Change Profile</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login_user.aspx" >Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <div class="container-fluid">
+        
+          <div class="row">
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+  
+              </asp:ContentPlaceHolder>
+               </div>
+      </div>
+      <div class="footer">
+        <div class="copyright text-center">
+        <p>Copyright © 2022</p>
+        </div>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
